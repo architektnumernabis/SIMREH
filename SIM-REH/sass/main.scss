@@ -1,0 +1,183 @@
+/*RESET*/
+@import 'reset.scss';
+
+/*KOLORY*/
+@import 'colors.scss';
+
+/*ANIMACJE*/
+@import 'animations.scss';
+
+/*WSPÓlNE KLASY*/
+body {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.fa-crutch {
+    color: $main_color;
+    padding: 2px;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main_color;
+}
+
+/*NAWIGACJA*/
+.navbar {
+    z-index: 1;
+
+    a {
+        text-transform: uppercase;
+        color: $white_color;
+        transition: color .4s;
+    }
+
+    a:hover {
+        color: $main_color;
+    }
+
+    .fa-bars {
+        color: $white_color;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: $main_color;
+    }
+}
+
+/*HEADER*/
+header {
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .header-img {
+        position: relative;
+        height: 100vh;
+        background-image: url('../img/header\ ip5.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+
+    .header-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -10;
+    }
+
+    .fa-chevron-down {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        font-size: 30px;
+        color: $white_color;
+        z-index: 100;
+        transition: color .4s;
+    }
+
+    .fa-chevron-down:hover {
+        color: $main_color;
+    }
+}
+
+/*MAIN*/
+/*O MNIE*/
+.about-me {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .col {
+        padding: 10px;
+    }
+
+
+    img {
+        height: 340px;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media(min-width: 768px) {
+    /*HEADER*/
+    header {
+        .header-img {
+            background-image: url('../img/header\ ipad.jpeg');
+        }
+    }
+
+    /*O MNIE*/
+    .about-me {
+        p {
+            font-size: 13px;
+        }
+
+        img {
+            height: 430px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    /*O MNIE*/
+    .about-me {
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            height: 490px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    /*HEADER*/
+    header {
+        .header-img {
+            background-image: url('../img/header\ big.jpeg');
+        }
+    }
+
+    /*O MNIE*/
+    .about-me {
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            height: 440px;
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+     /*O MNIE*/
+     .about-me {
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            height: 440px;
+        }
+    }
+}
