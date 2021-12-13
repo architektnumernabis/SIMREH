@@ -117,6 +117,7 @@ body {
   position: relative;
   font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
@@ -220,8 +221,35 @@ header .fa-chevron-down:hover {
 }
 
 /*KONTAKT*/
-.contact h2, .contact .contact-item {
+.contact h3 {
+  font-weight: bold;
+}
+
+.contact h2,
+.contact .contact-item {
   color: #fff;
+}
+
+.contact .contact-item {
+  padding: 10px;
+}
+
+.contact .contact-item .fab {
+  font-size: 25px;
+}
+
+.contact .contact-item a {
+  color: #fff;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.contact .contact-item a:hover {
+  color: #10deec;
+}
+
+.contact .contact-item .fas {
+  padding: 5px;
 }
 
 .contact .contact-img {

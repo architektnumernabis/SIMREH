@@ -16,6 +16,7 @@ body {
     position: relative;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
 
@@ -122,8 +123,34 @@ header {
 
 /*KONTAKT*/
 .contact {
-    h2, .contact-item {
+    h3 {
+        font-weight: bold;
+    }
+
+    h2,
+    .contact-item {
         color: $white_color;
+    }
+
+    .contact-item {
+        padding: 10px;
+
+        .fab {
+            font-size: 25px;
+        }
+        
+        a {
+            color: $white_color;
+            transition: color .4s;
+        }
+
+        a:hover {
+            color: $main_color;
+        }
+
+        .fas {
+            padding: 5px;
+        }
     }
 
     .contact-img {
@@ -159,6 +186,7 @@ footer {
 
 /*MEDIA QUERIES*/
 @media(min-width: 768px) {
+
     /*HEADER*/
     header {
         .header-img {
@@ -179,6 +207,7 @@ footer {
 }
 
 @media(min-width: 992px) {
+
     /*NAWIGACJA*/
     .navbar {
         height: 66px;
@@ -197,6 +226,7 @@ footer {
 }
 
 @media(min-width: 1200px) {
+
     /*HEADER*/
     header {
         .header-img {
@@ -213,8 +243,9 @@ footer {
 }
 
 @media(min-width: 1400px) {
-     /*O MNIE*/
-     .about-me {
+
+    /*O MNIE*/
+    .about-me {
         p {
             font-size: 18px;
         }
