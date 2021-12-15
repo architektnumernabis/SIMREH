@@ -143,6 +143,11 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.grey-gradient {
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
 /*NAWIGACJA*/
 .navbar {
   z-index: 1;
@@ -178,7 +183,7 @@ h2 {
 header .header-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/header ip5.jpeg");
+  background-image: url("/SIM-REH/img/header/header ip5.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -220,6 +225,46 @@ header .fa-chevron-down:hover {
   height: 340px;
 }
 
+/*REHABILITACJA*/
+.rehabilitation .card {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.rehabilitation .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rehabilitation .card .card-body {
+  height: 80px;
+}
+
+.rehabilitation .card .card-title {
+  margin-bottom: 20px;
+  height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rehabilitation .card .card-text {
+  font-size: 15px;
+}
+
+.rehabilitation .card .btn {
+  font-size: 14px;
+}
+
+.rehabilitation .card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+/*CERTYFIKATY*/
+/*CENNIK*/
 /*KONTAKT*/
 .contact h3 {
   font-weight: bold;
@@ -254,7 +299,7 @@ header .fa-chevron-down:hover {
 
 .contact .contact-img {
   position: relative;
-  background-image: url("/SIM-REH/img/contact/contact big .jpeg");
+  background-image: url("/SIM-REH/img/contact/contact ip5.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -285,7 +330,7 @@ footer a:hover {
 @media (min-width: 768px) {
   /*HEADER*/
   header .header-img {
-    background-image: url("../img/header ipad.jpeg");
+    background-image: url("/SIM-REH/img/header/header ipad.jpeg");
   }
   /*O MNIE*/
   .about-me p {
@@ -293,6 +338,14 @@ footer a:hover {
   }
   .about-me img {
     height: 430px;
+  }
+  /*REHABILITATION*/
+  .rehabilitation .card .card-body {
+    height: 220px;
+  }
+  /*KONTAKT*/
+  .contact .contact-img {
+    background-image: url("/SIM-REH/img/contact/contact ipad.jpeg");
   }
 }
 
@@ -308,12 +361,16 @@ footer a:hover {
   .about-me img {
     height: 490px;
   }
+  /*KONTAKT*/
+  .contact .contact-img {
+    background-image: url("/SIM-REH/img/contact/contact big .jpeg");
+  }
 }
 
 @media (min-width: 1200px) {
   /*HEADER*/
   header .header-img {
-    background-image: url("../img/header big.jpeg");
+    background-image: url("/SIM-REH/img/header/header big.jpeg");
   }
   /*O MNIE*/
   .about-me img {

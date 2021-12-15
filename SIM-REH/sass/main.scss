@@ -43,6 +43,11 @@ h2 {
     background-color: $shadow_color;
 }
 
+.grey-gradient {
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+}
+
 /*NAWIGACJA*/
 .navbar {
     z-index: 1;
@@ -77,7 +82,7 @@ header {
     .header-img {
         position: relative;
         height: 100vh;
-        background-image: url('../img/header\ ip5.jpeg');
+        background-image: url('/SIM-REH/img/header/header\ ip5.jpeg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -121,6 +126,46 @@ header {
     }
 }
 
+/*REHABILITACJA*/
+.rehabilitation {
+    .card {
+        transition: transform .4s;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            height: 80px;
+        }
+
+        .card-title {
+            margin-bottom: 20px;
+            height: 48px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .card-text {
+            font-size: 15px;
+        }
+
+        .btn {
+            font-size: 14px;
+        }
+    }
+
+    .card:hover {
+        transform: scale(.96)
+    }
+
+}
+
+/*CERTYFIKATY*/ 
+
+/*CENNIK*/
+
 /*KONTAKT*/
 .contact {
     h3 {
@@ -138,7 +183,7 @@ header {
         .fab {
             font-size: 25px;
         }
-        
+
         a {
             color: $white_color;
             transition: color .4s;
@@ -155,7 +200,7 @@ header {
 
     .contact-img {
         position: relative;
-        background-image: url('/SIM-REH/img/contact/contact\ big\ .jpeg');
+        background-image: url('/SIM-REH/img/contact/contact\ ip5.jpeg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -190,7 +235,7 @@ footer {
     /*HEADER*/
     header {
         .header-img {
-            background-image: url('../img/header\ ipad.jpeg');
+            background-image: url('/SIM-REH/img/header/header\ ipad.jpeg');
         }
     }
 
@@ -202,6 +247,22 @@ footer {
 
         img {
             height: 430px;
+        }
+    }
+
+    /*REHABILITATION*/
+    .rehabilitation {
+        .card {
+            .card-body {
+                height: 220px;
+            }
+        }
+    }
+
+    /*KONTAKT*/
+    .contact {
+        .contact-img {
+            background-image: url('/SIM-REH/img/contact/contact\ ipad.jpeg');
         }
     }
 }
@@ -223,6 +284,13 @@ footer {
             height: 490px;
         }
     }
+
+    /*KONTAKT*/
+    .contact {
+        .contact-img {
+            background-image: url('/SIM-REH/img/contact/contact\ big\ .jpeg');
+        }
+    }
 }
 
 @media(min-width: 1200px) {
@@ -230,7 +298,7 @@ footer {
     /*HEADER*/
     header {
         .header-img {
-            background-image: url('../img/header\ big.jpeg');
+            background-image: url('/SIM-REH/img/header/header\ big.jpeg');
         }
     }
 
