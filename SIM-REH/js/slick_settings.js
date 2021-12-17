@@ -1,7 +1,7 @@
 $('.rehabilitation-carousel').slick({
 
     mobileFirst: true,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     infinite: true,
     slidesToShow: 1,
