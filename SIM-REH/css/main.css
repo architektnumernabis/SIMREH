@@ -12,6 +12,7 @@
 /*KOLORY*/
 /*ANIMACJE*/
 .bounce-top {
+  display: block;
   -webkit-animation: bounce-top 2s infinite both;
           animation: bounce-top 2s infinite both;
 }
@@ -308,7 +309,58 @@ header .fa-chevron-down:hover {
 }
 
 /*CERTYFIKATY*/
+.cerftificates a {
+  color: black;
+}
+
+.cerftificates .fa-scroll {
+  padding-top: 20px;
+  font-size: 80px;
+  cursor: pointer;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.cerftificates .fa-scroll p {
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.cerftificates .fa-scroll:hover {
+  color: #10deec;
+}
+
 /*CENNIK*/
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.prices .price-box h3 {
+  color: #10deec;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.prices .price-tag {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.prices .price-box:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
 /*KONTAKT*/
 .contact h3 {
   font-weight: bold;
