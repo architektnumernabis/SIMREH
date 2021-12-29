@@ -309,11 +309,12 @@ header .fa-chevron-down:hover {
 }
 
 /*CERTYFIKATY*/
+/*GŁÓWNA STRONA*/
 .cerftificates a {
   color: black;
 }
 
-.cerftificates .fa-scroll {
+.cerftificates .fas {
   padding-top: 20px;
   font-size: 80px;
   cursor: pointer;
@@ -321,15 +322,25 @@ header .fa-chevron-down:hover {
   transition: color .4s;
 }
 
-.cerftificates .fa-scroll p {
+.cerftificates .fas p {
   font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
   padding-top: 10px;
 }
 
-.cerftificates .fa-scroll:hover {
+.cerftificates .fas:hover {
   color: #10deec;
+}
+
+/*PNF*/
+.header-certificates img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: solid #10deec 3px;
 }
 
 /*CENNIK*/

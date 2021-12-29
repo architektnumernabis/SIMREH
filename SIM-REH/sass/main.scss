@@ -206,16 +206,18 @@ header {
 }
 
 /*CERTYFIKATY*/
+/*GŁÓWNA STRONA*/
 .cerftificates {
     a {
         color: $black_color;
     }
 
-    .fa-scroll {
+    .fas {
         padding-top: 20px;
         font-size: 80px;
         cursor: pointer;
-        transition: color .4s;;
+        transition: color .4s;
+
 
         p {
             font-weight: normal;
@@ -225,10 +227,21 @@ header {
         }
     }
 
-    .fa-scroll:hover {
+    .fas:hover {
         color: $main_color;
     }
+}
 
+/*PNF*/
+.header-certificates {
+    img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        border: solid $main_color 3px;
+    }
 }
 
 /*CENNIK*/
@@ -237,7 +250,7 @@ header {
         margin: 20px 10px;
         padding: 30px;
         background-color: $white-color;
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
         transition: transform .3s;
 
         h3 {
