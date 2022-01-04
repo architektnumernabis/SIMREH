@@ -65,6 +65,11 @@ h2 {
     z-index: -10;
 }
 
+.border-for-certificates {
+    border-radius: 15px;
+    border: solid $main_color 3px;
+}
+
 /*NAWIGACJA*/
 .navbar {
     z-index: 1;
@@ -157,6 +162,12 @@ header {
 
         .btn {
             font-size: 14px;
+            transition: background-color border-color .4s;
+        }
+
+        .btn:hover {
+            background-color: $main_color;
+            border-color: $main_color;
         }
     }
 
@@ -232,15 +243,13 @@ header {
     }
 }
 
-/*PNF*/
+/*PODSTRONY*/
 .header-certificates {
     img {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 100%;
         height: auto;
-        border-radius: 15px;
-        border: solid $main_color 3px;
     }
 }
 
@@ -378,6 +387,13 @@ footer {
 
         img {
             height: 490px;
+        }
+    }
+
+    /*CERTYFIKATY*/
+    .header-certificates {
+        .img-specify {
+            width: auto;
         }
     }
 

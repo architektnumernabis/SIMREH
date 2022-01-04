@@ -166,6 +166,11 @@ h2 {
   z-index: -10;
 }
 
+.border-for-certificates {
+  border-radius: 15px;
+  border: solid #10deec 3px;
+}
+
 /*NAWIGACJA*/
 .navbar {
   z-index: 1;
@@ -261,6 +266,13 @@ header .fa-chevron-down:hover {
 
 .rehabilitation .card .btn {
   font-size: 14px;
+  -webkit-transition: background-color border-color .4s;
+  transition: background-color border-color .4s;
+}
+
+.rehabilitation .card .btn:hover {
+  background-color: #10deec;
+  border-color: #10deec;
 }
 
 .rehabilitation .card:hover {
@@ -333,14 +345,12 @@ header .fa-chevron-down:hover {
   color: #10deec;
 }
 
-/*PNF*/
+/*PODSTRONY*/
 .header-certificates img {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  border: solid #10deec 3px;
 }
 
 /*CENNIK*/
@@ -459,6 +469,10 @@ footer a:hover {
   }
   .about-me img {
     height: 490px;
+  }
+  /*CERTYFIKATY*/
+  .header-certificates .img-specify {
+    width: auto;
   }
   /*KONTAKT*/
   .contact .contact-img {
