@@ -30,5 +30,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
+$ echo .DS_Store >> .gitignore
 # End of https://www.toptal.com/developers/gitignore/api/macos
