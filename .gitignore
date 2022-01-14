@@ -30,7 +30,4 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-$ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
-$ echo .DS_Store >> .gitignore
 # End of https://www.toptal.com/developers/gitignore/api/macos
