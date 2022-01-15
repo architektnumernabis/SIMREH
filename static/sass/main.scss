@@ -19,7 +19,17 @@ body {
     font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
+}
 
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
 }
 
 .fa-crutch {
