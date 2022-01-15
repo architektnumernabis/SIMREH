@@ -21,17 +21,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-size: cover;
-}
-
 .fa-crutch {
     color: $main_color;
     padding: 2px;
@@ -63,7 +52,7 @@ h2 {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     z-index: 0;
 }
 
