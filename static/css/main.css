@@ -151,10 +151,11 @@ h2 {
 
 .hero-image {
   position: relative;
+  min-height: 100vh;
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   z-index: 0;
 }
 
