@@ -47,9 +47,13 @@ h2 {
     background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
 }
 
+.backdrop {
+    position: absolute;
+
+}
+
 .hero-image {
     position: relative;
-    min-height: 100vh;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -101,6 +105,8 @@ h2 {
 
 /*HEADER*/
 header {
+    min-height: 100vh;
+
     .header-img {
         background-image: url('../../static/img/header/header\ ip5.jpeg');
     }
