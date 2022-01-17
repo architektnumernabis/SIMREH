@@ -56,7 +56,7 @@ h2 {
     position: relative;
     height: 100vh;
     background-position: center;
-    background-size: 120%;
+    background-size: cover;
     background-attachment: fixed;
     z-index: 0;
 }
@@ -106,8 +106,6 @@ h2 {
 
 /*HEADER*/
 header {
-    min-height: 100vh;
-
     .header-img {
         background-image: url('../../static/img/header/header\ ip5.jpeg');
     }
@@ -189,7 +187,7 @@ header {
 
     .header-orthopedic-img {
         height: 85vh;
-        background-image: url('./img/rehabilitation/rehabilitation\ 01\ big.jpeg');
+        background-image: url('../../static/img/rehabilitation/rehabilitation\ 01\ big.jpeg');
     }
 }
 
