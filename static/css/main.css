@@ -301,7 +301,7 @@ header .fa-chevron-down:hover {
 
 .header-neurologic .header-neurologic-img {
   height: 85vh;
-  background-image: url("./img/rehabilitation/rehabilitation 02 big.jpeg");
+  background-image: url("../../static/img/rehabilitation/rehabilitation 02 big.jpeg");
 }
 
 /*MASAŻ KLASYCZNY*/
@@ -311,7 +311,7 @@ header .fa-chevron-down:hover {
 
 .header-massage .header-massage-img {
   height: 85vh;
-  background-image: url("./img/rehabilitation/rehabilitation 03 big.jpeg");
+  background-image: url("../../static/img/rehabilitation/rehabilitation 03 big.jpeg");
 }
 
 /*REHABILITACJA BÓLÓW KRĘGOSŁUPA*/
@@ -321,7 +321,7 @@ header .fa-chevron-down:hover {
 
 .header-back-pain .header-back-pain-img {
   height: 85vh;
-  background-image: url("./img/rehabilitation/rehabilitation 04  big.jpeg");
+  background-image: url("../../static/img/rehabilitation/rehabilitation 04  big.jpeg");
 }
 
 /*CERTYFIKATY*/
