@@ -21,3 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', addShadow)
 })
+
+const isMobile = navigator.userAgentData.mobile; //resolves true/false
+const bouncer = document.querySelector('.fa-chevron-down')
+
+if (isMobile == true) {
+    bouncer.classList.remove('bounce-top')
+}
