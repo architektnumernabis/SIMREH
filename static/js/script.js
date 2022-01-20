@@ -22,6 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', addShadow)
 })
 
+//skrypt zmieniający bacgroudn-attachment na scroll na urządzeniach IOS
+function iOS() {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  }
+
+if (iOS() == true) {
+    document.getElementById("hero-image").style.backgroundAttachment = "scroll"
+}
+
 //skrypt usuwający animację skaczącej strzałki na mobilnych urządzeniach
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 const bouncer = document.querySelector('.fa-chevron-down')
