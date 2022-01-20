@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', addShadow)
 })
 
-const isMobile = navigator.userAgentData.mobile; //resolves true/false
+//skrypt usuwający animację skaczącej strzałki na mobilnych urządzeniach
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 const bouncer = document.querySelector('.fa-chevron-down')
 
 if (isMobile == true) {
