@@ -54,7 +54,6 @@ h2 {
 
 .hero-image {
     position: relative;
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -107,6 +106,7 @@ h2 {
 /*HEADER*/
 header {
     .header-img {
+        height: 100vh;
         background-image: url('../../static/img/header/header\ ip5.jpeg');
     }
 
@@ -317,12 +317,7 @@ header {
     }
 
     .contact-img {
-        position: relative;
         background-image: url('../img/contact/contact\ ip5.jpeg');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: 0;
     }
 }
 
