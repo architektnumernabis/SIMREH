@@ -46,5 +46,5 @@ function iOS() {
 
 if (iOS() == true) {
     document.getElementById("hero-image").style.backgroundAttachment = "scroll"
-    ocument.getElementById("hero-image-two").style.backgroundAttachment = "scroll"
+    document.getElementById("hero-image-two").style.backgroundAttachment = "scroll"
 }
