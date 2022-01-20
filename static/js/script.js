@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', addShadow)
 })
 
+//skrypt usuwający animację skaczącej strzałki na mobilnych urządzeniach
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+const bouncer = document.querySelector('.fa-chevron-down')
+
+if (isMobile == true) {
+    bouncer.classList.remove('bounce-top')
+}
+
 //skrypt zmieniający bacgroudn-attachment na scroll na urządzeniach IOS
 function iOS() {
     return [
@@ -39,12 +47,4 @@ function iOS() {
 if (iOS() == true) {
     document.getElementById("hero-image").style.backgroundAttachment = "scroll"
     ocument.getElementById("hero-image-two").style.backgroundAttachment = "scroll"
-}
-
-//skrypt usuwający animację skaczącej strzałki na mobilnych urządzeniach
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-const bouncer = document.querySelector('.fa-chevron-down')
-
-if (isMobile == true) {
-    bouncer.classList.remove('bounce-top')
 }
