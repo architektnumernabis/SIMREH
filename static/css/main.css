@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*RESET*/
 *,
 *::before,
@@ -9,8 +8,8 @@
   padding: 0;
 }
 
-/*KOLORY*/
-/*ANIMACJE*/
+/*COLORS*/
+/*ANIMATIONS*/
 .bounce-top {
   display: block;
   -webkit-animation: bounce-top 2s infinite both;
@@ -109,18 +108,31 @@
   }
 }
 
-/*WSPÓlNE KLASY*/
+/*FONTS*/
+@font-face {
+  font-family: 'main_regular';
+  src: url("../fonts/subset-Raleway-Regular.woff2") format("woff2"), url("../fonts/subset-Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'main_bold';
+  src: url("../fonts/subset-Raleway-Bold.woff2") format("woff2"), url("..fonts/subset-Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*COMMON CLASSES*/
 html {
   scroll-padding-top: 66px;
 }
 
 body {
   position: relative;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'main_regular';
 }
 
 .fa-crutch {
@@ -170,7 +182,7 @@ h2 {
   border: solid #10deec 3px;
 }
 
-/*NAWIGACJA*/
+/*NAVIGATION*/
 .navbar {
   z-index: 1;
   -webkit-transition: background-color .6s;
@@ -225,7 +237,7 @@ header .fa-chevron-down:hover {
 }
 
 /*MAIN*/
-/*O MNIE*/
+/*ABOUT ME*/
 .about-me .col {
   padding: 10px;
 }
@@ -234,8 +246,8 @@ header .fa-chevron-down:hover {
   height: 340px;
 }
 
-/*REHABILITACJA*/
-/*GłÓWNA STRONA*/
+/*REHABILITATION*/
+/*MAIN PAGE*/
 .rehabilitation .card {
   -webkit-transition: -webkit-transform .4s;
   transition: -webkit-transform .4s;
@@ -280,7 +292,7 @@ header .fa-chevron-down:hover {
           transform: scale(0.96);
 }
 
-/*REHABILITACJA ORTOPEDYCZNA*/
+/*ORTHOPEDIC REHABILITATION*/
 .header-orthopedic {
   color: #fff;
 }
@@ -290,7 +302,7 @@ header .fa-chevron-down:hover {
   background-image: url("../../static/img/rehabilitation/rehabilitation 01 big.jpeg");
 }
 
-/*REHABILITACJA NEUROLOGICZNA*/
+/*NEUROLOGIC REHABILITATION*/
 .header-neurologic {
   color: #fff;
 }
@@ -300,7 +312,7 @@ header .fa-chevron-down:hover {
   background-image: url("../../static/img/rehabilitation/rehabilitation 02 big.jpeg");
 }
 
-/*MASAŻ KLASYCZNY*/
+/*CLASSICAL MASSAGE*/
 .header-massage {
   color: #fff;
 }
@@ -310,7 +322,7 @@ header .fa-chevron-down:hover {
   background-image: url("../../static/img/rehabilitation/rehabilitation 03 big.jpeg");
 }
 
-/*REHABILITACJA BÓLÓW KRĘGOSŁUPA*/
+/*BACK PAIN REHABILITATION*/
 .header-back-pain {
   color: #fff;
 }
@@ -320,8 +332,8 @@ header .fa-chevron-down:hover {
   background-image: url("../../static/img/rehabilitation/rehabilitation 04  big.jpeg");
 }
 
-/*CERTYFIKATY*/
-/*GŁÓWNA STRONA*/
+/*CERTIFICATES*/
+/*MAIN PAGE*/
 .cerftificates a {
   color: black;
 }
@@ -345,7 +357,7 @@ header .fa-chevron-down:hover {
   color: #10deec;
 }
 
-/*PODSTRONY*/
+/*SUBPAGES*/
 .header-certificates img {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -353,7 +365,7 @@ header .fa-chevron-down:hover {
   height: auto;
 }
 
-/*CENNIK*/
+/*PRICES*/
 .prices .price-box {
   margin: 20px 10px;
   padding: 30px;
@@ -382,7 +394,7 @@ header .fa-chevron-down:hover {
           transform: scale(0.96);
 }
 
-/*KONTAKT*/
+/*CONTACT*/
 .contact h3 {
   font-weight: bold;
 }
@@ -439,7 +451,7 @@ footer a:hover {
   header .header-img {
     background-image: url("../../static/img/header/header ipad.jpeg");
   }
-  /*O MNIE*/
+  /*ABOUT ME*/
   .about-me p {
     font-size: 13px;
   }
@@ -450,29 +462,29 @@ footer a:hover {
   .rehabilitation .card .card-body {
     height: 220px;
   }
-  /*KONTAKT*/
+  /*CONTACT*/
   .contact .contact-img {
     background-image: url("../img/contact/contact ipad.jpeg");
   }
 }
 
 @media (min-width: 992px) {
-  /*NAWIGACJA*/
+  /*NAVBAR*/
   .navbar {
     height: 66px;
   }
-  /*O MNIE*/
+  /*ABOUT ME*/
   .about-me p {
     font-size: 16px;
   }
   .about-me img {
     height: 490px;
   }
-  /*CERTYFIKATY*/
+  /*CERTIFICATES*/
   .header-certificates .img-specify {
     width: auto;
   }
-  /*KONTAKT*/
+  /*CONTACT*/
   .contact .contact-img {
     background-image: url("../img/contact/contact big .jpeg");
   }
@@ -483,14 +495,14 @@ footer a:hover {
   header .header-img {
     background-image: url("../../static/img/header/header big.jpeg");
   }
-  /*O MNIE*/
+  /*ABOUT ME*/
   .about-me img {
     height: 400px;
   }
 }
 
 @media (min-width: 1400px) {
-  /*O MNIE*/
+  /*ABOUT ME*/
   .about-me p {
     font-size: 18px;
   }

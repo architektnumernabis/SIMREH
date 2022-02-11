@@ -1,24 +1,39 @@
 /*RESET*/
 @import 'reset.scss';
 
-/*KOLORY*/
+/*COLORS*/
 @import 'colors.scss';
 
-/*ANIMACJE*/
+/*ANIMATIONS*/
 @import 'animations.scss';
 
-/*WSPÓlNE KLASY*/
+/*FONTS*/
+@font-face {
+    font-family: 'main_regular';
+    src: url('../fonts/subset-Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/subset-Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'main_bold';
+    src: url('../fonts/subset-Raleway-Bold.woff2') format('woff2'),
+        url('..fonts/subset-Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*COMMON CLASSES*/
 html {
     scroll-padding-top: 66px;
 }
 
 body {
     position: relative;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'main_regular';
 }
 
 .fa-crutch {
@@ -68,7 +83,7 @@ h2 {
     border: solid $main_color 3px;
 }
 
-/*NAWIGACJA*/
+/*NAVIGATION*/
 .navbar {
     z-index: 1;
     transition: background-color .6s;
@@ -121,7 +136,7 @@ header {
 }
 
 /*MAIN*/
-/*O MNIE*/
+/*ABOUT ME*/
 .about-me {
     .col {
         padding: 10px;
@@ -132,8 +147,8 @@ header {
     }
 }
 
-/*REHABILITACJA*/
-/*GłÓWNA STRONA*/
+/*REHABILITATION*/
+/*MAIN PAGE*/
 .rehabilitation {
     .card {
         transition: transform .4s;
@@ -174,7 +189,7 @@ header {
     }
 }
 
-/*REHABILITACJA ORTOPEDYCZNA*/
+/*ORTHOPEDIC REHABILITATION*/
 .header-orthopedic {
     color: $white_color;
 
@@ -184,7 +199,7 @@ header {
     }
 }
 
-/*REHABILITACJA NEUROLOGICZNA*/
+/*NEUROLOGIC REHABILITATION*/
 .header-neurologic {
     color: $white_color;
 
@@ -194,7 +209,7 @@ header {
     }
 }
 
-/*MASAŻ KLASYCZNY*/
+/*CLASSICAL MASSAGE*/
 .header-massage {
     color: $white_color;
 
@@ -204,7 +219,7 @@ header {
     }
 }
 
-/*REHABILITACJA BÓLÓW KRĘGOSŁUPA*/
+/*BACK PAIN REHABILITATION*/
 .header-back-pain {
     color: $white_color;
 
@@ -214,8 +229,8 @@ header {
     }
 }
 
-/*CERTYFIKATY*/
-/*GŁÓWNA STRONA*/
+/*CERTIFICATES*/
+/*MAIN PAGE*/
 .cerftificates {
     a {
         color: $black_color;
@@ -240,7 +255,7 @@ header {
     }
 }
 
-/*PODSTRONY*/
+/*SUBPAGES*/
 .header-certificates {
     img {
         margin-top: 10px;
@@ -250,7 +265,7 @@ header {
     }
 }
 
-/*CENNIK*/
+/*PRICES*/
 .prices {
     .price-box {
         margin: 20px 10px;
@@ -276,7 +291,7 @@ header {
     }
 }
 
-/*KONTAKT*/
+/*CONTACT*/
 .contact {
     h3 {
         font-weight: bold;
@@ -339,7 +354,7 @@ footer {
         }
     }
 
-    /*O MNIE*/
+    /*ABOUT ME*/
     .about-me {
         p {
             font-size: 13px;
@@ -359,7 +374,7 @@ footer {
         }
     }
 
-    /*KONTAKT*/
+    /*CONTACT*/
     .contact {
         .contact-img {
             background-image: url('../img/contact/contact\ ipad.jpeg');
@@ -369,12 +384,12 @@ footer {
 
 @media(min-width: 992px) {
 
-    /*NAWIGACJA*/
+    /*NAVBAR*/
     .navbar {
         height: 66px;
     }
 
-    /*O MNIE*/
+    /*ABOUT ME*/
     .about-me {
         p {
             font-size: 16px;
@@ -385,14 +400,14 @@ footer {
         }
     }
 
-    /*CERTYFIKATY*/
+    /*CERTIFICATES*/
     .header-certificates {
         .img-specify {
             width: auto;
         }
     }
 
-    /*KONTAKT*/
+    /*CONTACT*/
     .contact {
         .contact-img {
             background-image: url('../img/contact/contact\ big\ .jpeg');
@@ -409,7 +424,7 @@ footer {
         }
     }
 
-    /*O MNIE*/
+    /*ABOUT ME*/
     .about-me {
         img {
             height: 400px;
@@ -419,7 +434,7 @@ footer {
 
 @media(min-width: 1400px) {
 
-    /*O MNIE*/
+    /*ABOUT ME*/
     .about-me {
         p {
             font-size: 18px;
