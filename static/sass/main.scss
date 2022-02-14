@@ -88,23 +88,23 @@ h2 {
     z-index: 1;
     transition: background-color .6s;
 
-    a {
+    &__element {
         text-transform: uppercase;
         color: $white_color;
         transition: color .4s;
+
+        &--brand {
+            font-family: 'main_bold';
+        }
     }
 
-    a:hover {
+    &__element:hover {
         color: $main_color;
     }
 
-    .fa-bars {
+    &__mobile {
         color: $white_color;
         padding: 10px;
-    }
-
-    .navbar-brand {
-        font-weight: bold;
     }
 
     .active {
@@ -113,13 +113,13 @@ h2 {
 }
 
 /*HEADER*/
-header {
-    .header-img {
+.header {
+    &__img {
         height: 100vh;
         background-image: url('../../static/img/header/header\ ip5.jpeg');
     }
 
-    .fa-chevron-down {
+    &__arrow {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -130,7 +130,7 @@ header {
         transition: color .4s;
     }
 
-    .fa-chevron-down:hover {
+    &__arrow:hover {
         color: $main_color;
     }
 }
@@ -138,11 +138,11 @@ header {
 /*MAIN*/
 /*ABOUT ME*/
 .about-me {
-    .col {
+    &__col {
         padding: 10px;
     }
 
-    img {
+    &__img {
         height: 340px;
     }
 }
@@ -153,32 +153,32 @@ header {
     .card {
         transition: transform .4s;
 
-        img {
+        &__img {
             height: 300px;
             object-fit: cover;
         }
 
-        .card-body {
+        &__body {
             height: 80px;
         }
 
-        .card-title {
+        &__title {
             margin-bottom: 20px;
             height: 48px;
             text-align: center;
             text-transform: uppercase;
         }
 
-        .card-text {
+        &__text {
             font-size: 15px;
         }
 
-        .btn {
+        &__btn {
             font-size: 14px;
             transition: background-color border-color .4s;
         }
 
-        .btn:hover {
+        &__btn:hover {
             background-color: $main_color;
             border-color: $main_color;
         }
@@ -193,7 +193,7 @@ header {
 .header-orthopedic {
     color: $white_color;
 
-    .header-orthopedic-img {
+    &__img {
         height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 01\ big.jpeg');
     }
@@ -203,7 +203,7 @@ header {
 .header-neurologic {
     color: $white_color;
 
-    .header-neurologic-img {
+    &__img {
         height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 02\ big.jpeg');
     }
@@ -213,7 +213,7 @@ header {
 .header-massage {
     color: $white_color;
 
-    .header-massage-img {
+    &__img {
         height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 03\ big.jpeg');
     }
@@ -223,7 +223,7 @@ header {
 .header-back-pain {
     color: $white_color;
 
-    .header-back-pain-img {
+    &__img {
         height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 04\ \ big.jpeg');
     }
@@ -232,17 +232,17 @@ header {
 /*CERTIFICATES*/
 /*MAIN PAGE*/
 .cerftificates {
-    a {
+    &__link {
         color: $black_color;
     }
 
-    .fas {
+    &__icon {
         padding-top: 20px;
         font-size: 80px;
         cursor: pointer;
-        transition: color .4s;
+        transition: all .4s;
 
-        p {
+        &__text {
             font-weight: normal;
             font-size: 13px;
             text-transform: uppercase;
@@ -250,14 +250,15 @@ header {
         }
     }
 
-    .fas:hover {
+    &__icon:hover {
         color: $main_color;
+        transform: scale(1.1);
     }
 }
 
-/*SUBPAGES*/
+/*SUBPAGES FOR CERTIFICATES*/
 .header-certificates {
-    img {
+    &__img {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 100%;
@@ -272,71 +273,69 @@ header {
         padding: 30px;
         background-color: $white-color;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-        transition: transform .3s;
 
-        h3 {
+        &__h3 {
             color: $main_color;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-    }
 
-    .price-tag {
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .price-box:hover {
-        transform: scale(0.96);
+        &__price-tag {
+            font-family: 'main_bold';
+            font-size: 20px;
+        }
     }
 }
 
+
 /*CONTACT*/
 .contact {
-    h3 {
+    &__img {
+        background-image: url('../img/contact/contact\ ip5.jpeg');
+    }
+
+    &__h3 {
         font-weight: bold;
     }
 
-    h2,
-    .contact-item {
+    &__h2,
+    &__item {
         color: $white_color;
     }
 
-    .contact-item {
+    &__item {
         padding: 10px;
 
-        .fab {
-            font-size: 25px;
+        &__icon {
+            font-size: 35px;
         }
 
-        a {
+        &__a {
             color: $white_color;
             transition: color .4s;
         }
 
-        a:hover {
+        &__a:hover {
             color: $main_color;
         }
 
-        .fas {
-            padding: 5px;
+        &__i {
+            padding: 7px;
         }
-    }
-
-    .contact-img {
-        background-image: url('../img/contact/contact\ ip5.jpeg');
     }
 }
 
 /*FOOTER*/
-footer {
-    a {
+.footer {
+    &__a {
         color: $white_color;
         text-decoration: none;
-        transition: color .4s
+        transition: color .4s;
+        text-transform: uppercase;
+        font-family: 'main_bold';
     }
 
-    a:hover {
+    &__a:hover {
         color: $main_color;
     }
 }
@@ -348,19 +347,19 @@ footer {
     }
 
     /*HEADER*/
-    header {
-        .header-img {
+    .header {
+        &__img {
             background-image: url('../../static/img/header/header\ ipad.jpeg');
         }
     }
 
     /*ABOUT ME*/
     .about-me {
-        p {
+        &__text {
             font-size: 13px;
         }
 
-        img {
+        &__img {
             height: 430px;
         }
     }
@@ -368,7 +367,7 @@ footer {
     /*REHABILITATION*/
     .rehabilitation {
         .card {
-            .card-body {
+            &__body {
                 height: 220px;
             }
         }
@@ -376,7 +375,7 @@ footer {
 
     /*CONTACT*/
     .contact {
-        .contact-img {
+        &__img {
             background-image: url('../img/contact/contact\ ipad.jpeg');
         }
     }
@@ -391,25 +390,25 @@ footer {
 
     /*ABOUT ME*/
     .about-me {
-        p {
+        &__text {
             font-size: 16px;
         }
 
-        img {
+        &__img {
             height: 490px;
         }
     }
 
     /*CERTIFICATES*/
     .header-certificates {
-        .img-specify {
+        &__specify {
             width: auto;
         }
     }
 
     /*CONTACT*/
     .contact {
-        .contact-img {
+        &__img {
             background-image: url('../img/contact/contact\ big\ .jpeg');
         }
     }
@@ -418,15 +417,15 @@ footer {
 @media(min-width: 1200px) {
 
     /*HEADER*/
-    header {
-        .header-img {
+    .header {
+        &__img {
             background-image: url('../../static/img/header/header\ big.jpeg');
         }
     }
 
     /*ABOUT ME*/
     .about-me {
-        img {
+        &__img {
             height: 400px;
         }
     }
@@ -436,11 +435,11 @@ footer {
 
     /*ABOUT ME*/
     .about-me {
-        p {
+        &__text {
             font-size: 18px;
         }
 
-        img {
+        &__img {
             height: 440px;
         }
     }

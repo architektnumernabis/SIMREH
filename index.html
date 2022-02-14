@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!--AOS-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!--MOJE STYLE-->
+  <!--MY STYLES-->
   <link rel="stylesheet" href="./static/css/main.css">
   <!--FONT AWESOME-->
   <script src="https://kit.fontawesome.com/8f23681658.js" crossorigin="anonymous"></script>
@@ -21,21 +21,21 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="67">
 
-  <!--NAWIGACJA-->
+  <!--NAVIGATION-->
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100">
     <div class="container">
-      <a class="navbar-brand" href="#">Sim<i class="fas fa-crutch"></i>reh</a>
+      <a class="navbar-brand navbar__element navbar__element--brand" href="#">Sim<i class="fas fa-crutch"></i>reh</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars navbar__mobile"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="#about-me">o mnie</a>
-          <a class="nav-link" href="#rehabilitation">rehabilitacja</a>
-          <a class="nav-link" href="#certificates">certyfikaty</a>
-          <a class="nav-link" href="#prices">cennik</a>
-          <a class="nav-link" href="#contact">kontakt</a>
+          <a class="nav-link navbar__element" href="#about-me">o mnie</a>
+          <a class="nav-link navbar__element" href="#rehabilitation">rehabilitacja</a>
+          <a class="nav-link navbar__element" href="#certificates">certyfikaty</a>
+          <a class="nav-link navbar__element" href="#prices">cennik</a>
+          <a class="nav-link navbar__element" href="#contact">kontakt</a>
         </div>
       </div>
     </div>
@@ -43,24 +43,25 @@
 
   <!--HEADER-->
   <header class="header">
-    <div class="header-img hero-image" id="hero-image">
+    <div class="header__img hero-image" id="hero-image">
       <div class="shadow"></div>
-      <a href="#about-me"><i class="fas fa-chevron-down bounce-top"></i></a>
+      <a href="#about-me"><i class="fas fa-chevron-down bounce-top header__arrow"></i></a>
     </div>
   </header>
 
   <!--MAIN-->
-  <!--O MNIE-->
+  <!--ABOUT ME-->
   <main>
     <section id="about-me" class="py-4 about-me">
       <div class="container">
         <h2>o mnie</h2>
         <div class="underline"></div>
         <div class="row">
-          <div data-aos="fade-right" class="col-md-6 text-center about-me-img">
-            <img src="./static/img/about-me/szymon.jpeg" alt="Zdjęcie przedstawia Szymona Pawlicę, fizjoterapeutę.">
+          <div data-aos="fade-right" class="col-md-6 text-center about-me__col">
+            <img class="about-me__img" src="./static/img/about-me/szymon.jpeg"
+              alt="Zdjęcie przedstawia Szymona Pawlicę, fizjoterapeutę.">
           </div>
-          <div data-aos="fade-up" class="col-md-6 py-3 about-me-text">
+          <div data-aos="fade-up" class="col-md-6 py-3 about-me__text about-me__col">
             <p>Nazywam się Szymon Pawlica. Ukończyłem Akademię Wychowania Fizycznego w Krakowie na Wydziale
               Rehabilitacji Ruchowej.</p>
             <p>Moją przygodę z rehabilitacją rozpocząłem w 2008 roku od nauki na krakowskiej AWF, gdzie poznałem
@@ -77,81 +78,81 @@
       </div>
     </section>
 
-    <!--REHABILITACJA-->
+    <!--REHABILITATION-->
     <section id="rehabilitation" class="py-4 rehabilitation grey-gradient">
       <h2>rehabilitacja</h2>
       <div class="underline"></div>
       <div class="container">
         <div class="card-group rehabilitation-carousel">
           <div class="card mx-3">
-            <img src="./static/img/rehabilitation/rehabilitation 01 small.jpeg" class="card-img-top"
+            <img src="./static/img/rehabilitation/rehabilitation 01 small.jpeg" class="card-img-top card__img"
               alt="Zdjęcie roetngenowskie złamanej stopy">
-            <div class="card-body">
-              <h5 class="card-title">Rehabilitacja ortopedyczna</h5>
-              <p class=" d-none d-md-block card-text">Stosowana u osób, które doznały złamania, skęcenia, stłuczenia
+            <div class="card-body card__body">
+              <h5 class="card__title">Rehabilitacja ortopedyczna</h5>
+              <p class=" d-none d-md-block card__text">Stosowana u osób, które doznały złamania, skęcenia, stłuczenia
                 bądź przeciążeń narządu ruchu.</p>
             </div>
             <div class="card-footer d-flex justify-content-around">
-              <a href="./templates/Massage/rehabilitacja_ortopedyczna.html"><button button" class="btn btn-dark">czytaj więcej</button></a>
+              <a href="./templates/Massage/rehabilitacja_ortopedyczna.html"><button type="button" class="btn btn-dark card__btn">czytaj więcej</button></a>
             </div>
           </div>
           <div class="card mx-3">
-            <img src="./static/img/rehabilitation/rehabilitation 02 small.jpeg" class="card-img-top"
+            <img src="./static/img/rehabilitation/rehabilitation 02 small.jpeg" class="card-img-top card__img"
               alt="Zdjęcie neuronów">
-            <div class="card-body">
-              <h5 class="card-title">Rehabilitacja neurologiczna</h5>
-              <p class=" d-none d-md-block card-text">Głównym celem tego rodzaju rehabilitacji jest przywracanie
+            <div class="card-body card__body">
+              <h5 class="card__title">Rehabilitacja neurologiczna</h5>
+              <p class=" d-none d-md-block card__text">Głównym celem tego rodzaju rehabilitacji jest przywracanie
                 pacjentom sprawności ruchowej w jak największym stopniu.</p>
             </div>
             <div class="card-footer d-flex justify-content-around">
-              <a href="./templates/Massage/rehabilitacja_neurologiczna.html"><button type="button" class="btn btn-dark">czytaj więcej</button></a>
+              <a href="./templates/Massage/rehabilitacja_neurologiczna.html"><button type="button" class="btn btn-dark card__btn">czytaj więcej</button></a>
             </div>
           </div>
           <div class="card mx-3">
-            <img src="./static/img/rehabilitation/rehabilitation 03 small.jpeg" class="card-img-top"
+            <img src="./static/img/rehabilitation/rehabilitation 03 small.jpeg" class="card-img-top card__img"
               alt="Zdjęcie masażysty masującego pacjenta">
-            <div class="card-body">
-              <h5 class="d-flex justify-content-center align-items-center card-title">Masaż klasyczny</h5>
-              <p class="d-none d-md-block card-text">Stosowany m.in. przy wzmożonym napięciu mięśni spowodowanym
+            <div class="card-body card__body">
+              <h5 class="d-flex justify-content-center align-items-center card__title">Masaż klasyczny</h5>
+              <p class="d-none d-md-block card__text">Stosowany m.in. przy wzmożonym napięciu mięśni spowodowanym
                 stresem, zmęczeniu mięśni, stanach przeciążeniowych układu mięsniowo - szkieletowego.</p>
             </div>
             <div class="card-footer d-flex justify-content-around">
-              <a href="./templates/Massage/masaż_klasyczny.html"><button type="button" class="btn btn-dark">czytaj więcej</button></a>
+              <a href="./templates/Massage/masaż_klasyczny.html"><button type="button" class="btn btn-dark card__btn">czytaj więcej</button></a>
             </div>
           </div>
           <div class="card mx-3">
-            <img src="./static/img/rehabilitation/rehabilitation 04 small.jpeg" class="card-img-top"
+            <img src="./static/img/rehabilitation/rehabilitation 04 small.jpeg" class="card-img-top card__img"
               alt="Zdjęcie człowieka z bólem kręgosłupa">
-            <div class="card-body">
-              <h5 class="card-title">Rehabilitacja bólów kręgosłupa</h5>
-              <p class="d-none d-md-block card-text">Bóle kręgosłupa to problem, który w dzisiejszych czasach dotyka
+            <div class="card-body card__body">
+              <h5 class="card__title">Rehabilitacja bólów kręgosłupa</h5>
+              <p class="d-none d-md-block card__text">Bóle kręgosłupa to problem, który w dzisiejszych czasach dotyka
                 znaczną częśc społeczeństwa.</p>
             </div>
             <div class="card-footer d-flex justify-content-around">
-              <a href="./templates/Massage/rehabilitacja_bolów_kręgosłupa.html"><button type="button" class="btn btn-dark">czytaj więcej</button></a>
+              <a href="./templates/Massage/rehabilitacja_bolów_kręgosłupa.html"><button type="button" class="btn btn-dark card__btn">czytaj więcej</button></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--CERTYFIKATY-->
+    <!--CERTIFICATES-->
     <section id="certificates" class="py-4 cerftificates">
       <div class="container">
         <h2>certyfikaty</h2>
         <div class="underline"></div>
         <div class="row text-center pb-5">
           <div class="col-md-6" data-aos="zoom-in" data-aos-delay="50">
-            <a href="./templates/Certificatess/dyplom.html">
-              <i class="fas fa-scroll">
-                <p>dyplom ukończenia studiów</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/dyplom.html">
+              <i class="fas fa-scroll cerftificates__icon">
+               <p class="cerftificates__icon__text">dyplom ukończenia studiów</p>
               </i>
             </a>
           </div>
           <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <a href="./templates/Certificatess/zawod.html">
-              <i class="fas fa-scroll">
-                <p>prawo do wykonywania zawodu</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/zawod.html">
+              <i class="fas fa-scroll cerftificates__icon">
+                <p class="cerftificates__icon__text">prawo do wykonywania zawodu</p>
               </i>
             </a>
           </div>
@@ -165,86 +166,86 @@
         </div>
         <div class="row text-center pb-5">
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
-            <a href="./templates/Certificatess/pnf.html">
-              <i class="fas fa-file-medical">
-                <p>pnf podstawowy/rozwijający</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/pnf.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">pnf podstawowy/rozwijający</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
-            <a href="./templates/Certificatess/manipulacje.html">
-              <i class="fas fa-file-medical">
-                <p>manipulacje trzewno-stawowe okolicy kręgosłupa lędźwiowego i miednicy</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/manipulacje.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">manipulacje trzewno-stawowe okolicy kręgosłupa lędźwiowego i miednicy</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
-            <a href="./templates/Certificatess/mckenzie.html">
-              <i class="fas fa-file-medical">
-                <p>diagnozowanie i leczenie zespołów bólowych kręgosłupa metodą McKenziego</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/mckenzie.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">diagnozowanie i leczenie zespołów bólowych kręgosłupa metodą McKenziego</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
-            <a href="./templates/Certificatess/diagnostyka.html">
-              <i class="fas fa-file-medical">
-                <p>diagnostyka i leczenie zaburzeń mięśniowo - powięziowych</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/diagnostyka.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">diagnostyka i leczenie zaburzeń mięśniowo - powięziowych</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
-            <a href="./templates/Certificatess/cyriax.html">
-              <i class="fas fa-file-medical">
-                <p>medycyna ortopedyczna według dr. Cyriax'a</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/cyriax.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">medycyna ortopedyczna według dr. Cyriax'a</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-            <a href="./templates/Certificatess/taping.html">
-              <i class="fas fa-file-medical">
-                <p>kinesjology taping</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/taping.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">kinesjology taping</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="450">
-            <a href="./templates/Certificatess/manualna.html">
-              <i class="fas fa-file-medical">
-                <p>terapia manualna</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/manualna.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">terapia manualna</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
-            <a href="./templates/Certificatess/tkanki.html">
-              <i class="fas fa-file-medical">
-                <p>współczesne metody diagnostyki i leczenia tkanek miękkich</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/tkanki.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">współczesne metody diagnostyki i leczenia tkanek miękkich</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="550">
-            <a href="./templates/Certificatess/sportowiec.html">
-              <i class="fas fa-file-medical">
-                <p>kompleksowa fizjoterapia sportowca w fazie ostrej</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/sportowiec.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">kompleksowa fizjoterapia sportowca w fazie ostrej</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
-            <a href="./templates/Certificatess/powiezi.html">
-              <i class="fas fa-file-medical">
-                <p>zintegrowana terapia powięziowa</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/powiezi.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">zintegrowana terapia powięziowa</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="650">
-            <a href="./templates/Certificatess/wiscelarna.html">
-              <i class="fas fa-file-medical">
-                <p>terapia wiscelarna w praktyce fizjoterapeuty</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/wiscelarna.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">terapia wiscelarna w praktyce fizjoterapeuty</p>
               </i>
             </a>
           </div>
           <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="700">
-            <a href="./templates/Certificatess/hvla.html">
-              <i class="fas fa-file-medical">
-                <p>HVLA - manipulacje krótkodźwigniowe</p>
+            <a class="cerftificates__link" href="./templates/Certificatess/hvla.html">
+              <i class="fas fa-file-medical cerftificates__icon">
+                <p class="cerftificates__icon__text">HVLA - manipulacje krótkodźwigniowe</p>
               </i>
             </a>
           </div>
@@ -252,7 +253,7 @@
       </div>
     </section>
 
-    <!--CENY-->
+    <!--PRICES-->
     <section id="prices" class="py-4 prices grey-gradient">
       <h2>cennik</h2>
       <div class="underline"></div>
@@ -260,69 +261,69 @@
         <div class="row text-center justify-content-center">
           <div class=" col-md-6 col-lg-4">
             <div data-aos="flip-left" data-aos-delay="100" class="price-box">
-              <h3>masaż</h3>
+              <h3 class="price-box__h3">masaż</h3>
               <hr>
               <p><i class="fas fa-check mx-1"></i>klasyczny/relaksacyjny</p>
               <p>czas trwania: 50min</p>
-              <p class="price-tag">130zł</p>
+              <p class="price-box__price-tag">130zł</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 order-lg-last">
             <div data-aos="flip-left" data-aos-delay="200" class="price-box">
-              <h3>masaż</h3>
+              <h3 class="price-box__h3">masaż</h3>
               <hr>
               <p><i class="fas fa-check mx-1"></i>klasyczny/relaksacyjny</p>
               <p>czas trwania: 30min</p>
-              <p class="price-tag">90zł</p>
+              <p class="price-box__price-tag">90zł</p>
             </div>
           </div>
           <div class=" col-md-6 col-lg-4">
             <div data-aos="flip-left" data-aos-delay="300" class="price-box">
-              <h3>wizyta</h3>
+              <h3 class="price-box__h3">wizyta</h3>
               <hr>
               <p><i class="fas fa-check mx-1"></i>wywiad</p>
               <p><i class="fas fa-check mx-1"></i>diagnostyka</p>
               <p><i class="fas fa-check mx-1"></i>celowana teriapia</p>
               <p>czas trwania: 50min</p>
-              <p class="price-tag">130zł</p>
+              <p class="price-box__price-tag">130zł</p>
             </div>
           </div>
         </div>
         <div class="text-center">
           <p class="text-uppercase fw-bold">dodatkowo płatne od wizyty:</p>
-          <p>-kinesjology taping: <b>20-40zł</b></p>
-          <p>-fala uderzeniowa: <b>30zł</b></p>
-          <p>-elektroterapia (TENS, KOTZ): <b>10-20zł</b></p>
-          <p>-fala uderzeniowa (4 tysiące uderzeń) <b>60zł</b></p>
+          <p>-kinesjology taping: <span style="font-family: 'main_bold';">20-40zł</span></p>
+          <p>-fala uderzeniowa: <span style="font-family: 'main_bold';">30zł</span></p>
+          <p>-elektroterapia (TENS, KOTZ): <span style="font-family: 'main_bold';">10-20zł</span></p>
+          <p>-fala uderzeniowa (4 tysiące uderzeń) <span style="font-family: 'main_bold';">60zł</span></p>
         </div>
       </div>
     </section>
 
-    <!--KONTAKT-->
+    <!--CONTACT-->
     <section id="contact" class="pb-0 contact">
-      <div id="hero-image-two" class="contact-img hero-image">
+      <div id="hero-image-two" class="contact__img hero-image">
         <div class="shadow"></div>
         <div class="container">
-          <h2 class="pt-3">kontakt</h2>
+          <h2 class="pt-3 contact__h2">kontakt</h2>
           <div class="underline"></div>
           <div class="row text-center">
-            <div class="col-sm-6 col-lg-4 order-1 py-4 contact-item">
-              <h3 class="pb-3">kontakt do mnie</h3>
-              <p><i class="fas fa-phone"></i>609 450 542</p>
-              <p><i class="fas fa-at"></i>szymonpawlica@poczta.onet.pl</p>
+            <div class="col-sm-6 col-lg-4 order-1 py-4 contact__item">
+              <h3 class="pb-3 contact__h3">kontakt do mnie</h3>
+              <p><i class="fas fa-phone contact__item__i"></i>609 450 542</p>
+              <p><i class="fas fa-at contact__item__i"></i>szymonpawlica@poczta.onet.pl</p>
             </div>
-            <div class="col-lg-4 order-0 order-lg-1 py-4 contact-item">
-              <h3 class="pb-3">social media</h3>
-              <a href="https://www.facebook.com/Gabinet-rehabilitacji-Szymon-Pawlica-103344164929898/" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="col-lg-4 order-0 order-lg-1 py-4 contact__item">
+              <h3 class="pb-3 contact__h3">social media</h3>
+              <a class="contact__item contact__item__a contact__item__icon" href="https://www.facebook.com/Gabinet-rehabilitacji-Szymon-Pawlica-103344164929898/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a class="contact__item contact__item__a contact__item__icon" href="" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col-sm-6 col-lg-4 order-1 py-4 contact-item">
-              <h3 class="pb-3">
-                <a class="text-decoration-none"href="https://www.facebook.com/medicomeosw" target="_blank">medicome</a>
+            <div class="col-sm-6 col-lg-4 order-1 py-4 contact__item">
+              <h3 class="pb-3 contact__h3">
+                <a class="text-decoration-none contact__item__a" href="https://www.facebook.com/medicomeosw" target="_blank">medicome</a>
               </h3>
-              <p><i class="fas fa-building"></i>ul. 3 Maja 10, 32-600 Oświęcim</p>
-              <p><i class="fas fa-phone"></i>570 333 337</p>
-              <p><i class="fas fa-phone"></i>698 901 491</p>
+              <p><i class="fas fa-building contact__item__i"></i>ul. 3 Maja 10, 32-600 Oświęcim</p>
+              <p><i class="fas fa-phone contact__item__i"></i>570 333 337</p>
+              <p><i class="fas fa-phone contact__item__i"></i>698 901 491</p>
             </div>
           </div>
         </div>
@@ -331,8 +332,8 @@
   </main>
 
   <!--FOOTER-->
-  <footer class="bg-dark text-light py-4 text-center">
-    <p class="mb-0"> &copy; 2022 | <a href="#">Sim<i class="fas fa-crutch"></i>reh</a></p>
+  <footer class="bg-dark text-light py-4 text-center footer">
+    <p class="mb-0"> &copy; 2022 | <a class="footer__a" href="#">Sim<i class="fas fa-crutch"></i>reh</a></p>
   </footer>
 
   <!--BOOTSTRAP-->
@@ -346,7 +347,7 @@
   <!--AOS-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./static/js/aos_init.js"></script>
-  <!--MOJE SKRYPTY-->
+  <!--MY SCRIPTS-->
   <script src="./static/js/slick_settings.js"></script>
   <script src="./static/js/script.js"></script>
 </body>

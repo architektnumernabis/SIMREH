@@ -189,24 +189,24 @@ h2 {
   transition: background-color .6s;
 }
 
-.navbar a {
+.navbar__element {
   text-transform: uppercase;
   color: #fff;
   -webkit-transition: color .4s;
   transition: color .4s;
 }
 
-.navbar a:hover {
+.navbar__element--brand {
+  font-family: 'main_bold';
+}
+
+.navbar__element:hover {
   color: #10deec;
 }
 
-.navbar .fa-bars {
+.navbar__mobile {
   color: #fff;
   padding: 10px;
-}
-
-.navbar .navbar-brand {
-  font-weight: bold;
 }
 
 .navbar .active {
@@ -214,12 +214,12 @@ h2 {
 }
 
 /*HEADER*/
-header .header-img {
+.header__img {
   height: 100vh;
   background-image: url("../../static/img/header/header ip5.jpeg");
 }
 
-header .fa-chevron-down {
+.header__arrow {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -232,17 +232,17 @@ header .fa-chevron-down {
   transition: color .4s;
 }
 
-header .fa-chevron-down:hover {
+.header__arrow:hover {
   color: #10deec;
 }
 
 /*MAIN*/
 /*ABOUT ME*/
-.about-me .col {
+.about-me__col {
   padding: 10px;
 }
 
-.about-me img {
+.about-me__img {
   height: 340px;
 }
 
@@ -255,34 +255,34 @@ header .fa-chevron-down:hover {
   transition: transform .4s, -webkit-transform .4s;
 }
 
-.rehabilitation .card img {
+.rehabilitation .card__img {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.rehabilitation .card .card-body {
+.rehabilitation .card__body {
   height: 80px;
 }
 
-.rehabilitation .card .card-title {
+.rehabilitation .card__title {
   margin-bottom: 20px;
   height: 48px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.rehabilitation .card .card-text {
+.rehabilitation .card__text {
   font-size: 15px;
 }
 
-.rehabilitation .card .btn {
+.rehabilitation .card__btn {
   font-size: 14px;
   -webkit-transition: background-color border-color .4s;
   transition: background-color border-color .4s;
 }
 
-.rehabilitation .card .btn:hover {
+.rehabilitation .card__btn:hover {
   background-color: #10deec;
   border-color: #10deec;
 }
@@ -297,7 +297,7 @@ header .fa-chevron-down:hover {
   color: #fff;
 }
 
-.header-orthopedic .header-orthopedic-img {
+.header-orthopedic__img {
   height: 85vh;
   background-image: url("../../static/img/rehabilitation/rehabilitation 01 big.jpeg");
 }
@@ -307,7 +307,7 @@ header .fa-chevron-down:hover {
   color: #fff;
 }
 
-.header-neurologic .header-neurologic-img {
+.header-neurologic__img {
   height: 85vh;
   background-image: url("../../static/img/rehabilitation/rehabilitation 02 big.jpeg");
 }
@@ -317,7 +317,7 @@ header .fa-chevron-down:hover {
   color: #fff;
 }
 
-.header-massage .header-massage-img {
+.header-massage__img {
   height: 85vh;
   background-image: url("../../static/img/rehabilitation/rehabilitation 03 big.jpeg");
 }
@@ -327,38 +327,40 @@ header .fa-chevron-down:hover {
   color: #fff;
 }
 
-.header-back-pain .header-back-pain-img {
+.header-back-pain__img {
   height: 85vh;
   background-image: url("../../static/img/rehabilitation/rehabilitation 04  big.jpeg");
 }
 
 /*CERTIFICATES*/
 /*MAIN PAGE*/
-.cerftificates a {
+.cerftificates__link {
   color: black;
 }
 
-.cerftificates .fas {
+.cerftificates__icon {
   padding-top: 20px;
   font-size: 80px;
   cursor: pointer;
-  -webkit-transition: color .4s;
-  transition: color .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
-.cerftificates .fas p {
+.cerftificates__icon__text {
   font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
   padding-top: 10px;
 }
 
-.cerftificates .fas:hover {
+.cerftificates__icon:hover {
   color: #10deec;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-/*SUBPAGES*/
-.header-certificates img {
+/*SUBPAGES FOR CERTIFICATES*/
+.header-certificates__img {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -372,73 +374,65 @@ header .fa-chevron-down:hover {
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 
-.prices .price-box h3 {
+.prices .price-box__h3 {
   color: #10deec;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.prices .price-tag {
-  font-weight: bold;
+.prices .price-box__price-tag {
+  font-family: 'main_bold';
   font-size: 20px;
 }
 
-.prices .price-box:hover {
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
+/*CONTACT*/
+.contact__img {
+  background-image: url("../img/contact/contact ip5.jpeg");
 }
 
-/*CONTACT*/
-.contact h3 {
+.contact__h3 {
   font-weight: bold;
 }
 
-.contact h2,
-.contact .contact-item {
+.contact__h2, .contact__item {
   color: #fff;
 }
 
-.contact .contact-item {
+.contact__item {
   padding: 10px;
 }
 
-.contact .contact-item .fab {
-  font-size: 25px;
+.contact__item__icon {
+  font-size: 35px;
 }
 
-.contact .contact-item a {
+.contact__item__a {
   color: #fff;
   -webkit-transition: color .4s;
   transition: color .4s;
 }
 
-.contact .contact-item a:hover {
+.contact__item__a:hover {
   color: #10deec;
 }
 
-.contact .contact-item .fas {
-  padding: 5px;
-}
-
-.contact .contact-img {
-  background-image: url("../img/contact/contact ip5.jpeg");
+.contact__item__i {
+  padding: 7px;
 }
 
 /*FOOTER*/
-footer a {
+.footer__a {
   color: #fff;
   text-decoration: none;
   -webkit-transition: color .4s;
   transition: color .4s;
+  text-transform: uppercase;
+  font-family: 'main_bold';
 }
 
-footer a:hover {
+.footer__a:hover {
   color: #10deec;
 }
 
@@ -448,22 +442,22 @@ footer a:hover {
     background-size: cover;
   }
   /*HEADER*/
-  header .header-img {
+  .header__img {
     background-image: url("../../static/img/header/header ipad.jpeg");
   }
   /*ABOUT ME*/
-  .about-me p {
+  .about-me__text {
     font-size: 13px;
   }
-  .about-me img {
+  .about-me__img {
     height: 430px;
   }
   /*REHABILITATION*/
-  .rehabilitation .card .card-body {
+  .rehabilitation .card__body {
     height: 220px;
   }
   /*CONTACT*/
-  .contact .contact-img {
+  .contact__img {
     background-image: url("../img/contact/contact ipad.jpeg");
   }
 }
@@ -474,39 +468,39 @@ footer a:hover {
     height: 66px;
   }
   /*ABOUT ME*/
-  .about-me p {
+  .about-me__text {
     font-size: 16px;
   }
-  .about-me img {
+  .about-me__img {
     height: 490px;
   }
   /*CERTIFICATES*/
-  .header-certificates .img-specify {
+  .header-certificates__specify {
     width: auto;
   }
   /*CONTACT*/
-  .contact .contact-img {
+  .contact__img {
     background-image: url("../img/contact/contact big .jpeg");
   }
 }
 
 @media (min-width: 1200px) {
   /*HEADER*/
-  header .header-img {
+  .header__img {
     background-image: url("../../static/img/header/header big.jpeg");
   }
   /*ABOUT ME*/
-  .about-me img {
+  .about-me__img {
     height: 400px;
   }
 }
 
 @media (min-width: 1400px) {
   /*ABOUT ME*/
-  .about-me p {
+  .about-me__text {
     font-size: 18px;
   }
-  .about-me img {
+  .about-me__img {
     height: 440px;
   }
 }
