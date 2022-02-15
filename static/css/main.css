@@ -255,34 +255,34 @@ h2 {
   transition: transform .4s, -webkit-transform .4s;
 }
 
-.rehabilitation .card__img {
+.rehabilitation .card img {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.rehabilitation .card__body {
+.rehabilitation .card .card-body {
   height: 80px;
 }
 
-.rehabilitation .card__title {
+.rehabilitation .card .card-body h5 {
   margin-bottom: 20px;
   height: 48px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.rehabilitation .card__text {
+.rehabilitation .card .card-body p {
   font-size: 15px;
 }
 
-.rehabilitation .card__btn {
+.rehabilitation .card .btn {
   font-size: 14px;
   -webkit-transition: background-color border-color .4s;
   transition: background-color border-color .4s;
 }
 
-.rehabilitation .card__btn:hover {
+.rehabilitation .card .btn:hover {
   background-color: #10deec;
   border-color: #10deec;
 }
@@ -453,7 +453,7 @@ footer a:hover {
     height: 430px;
   }
   /*REHABILITATION*/
-  .rehabilitation .card__body {
+  .rehabilitation .card .card-body {
     height: 220px;
   }
   /*CONTACT*/

@@ -153,32 +153,32 @@ h2 {
     .card {
         transition: transform .4s;
 
-        &__img {
+        img {
             height: 300px;
             object-fit: cover;
         }
 
-        &__body {
+        .card-body {
             height: 80px;
+
+            h5 {
+                margin-bottom: 20px;
+                height: 48px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 15px;
+            }
         }
 
-        &__title {
-            margin-bottom: 20px;
-            height: 48px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        &__text {
-            font-size: 15px;
-        }
-
-        &__btn {
+        .btn {
             font-size: 14px;
             transition: background-color border-color .4s;
         }
 
-        &__btn:hover {
+        .btn:hover {
             background-color: $main_color;
             border-color: $main_color;
         }
@@ -368,7 +368,7 @@ footer {
     /*REHABILITATION*/
     .rehabilitation {
         .card {
-            &__body {
+            .card-body {
                 height: 220px;
             }
         }
