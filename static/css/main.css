@@ -189,22 +189,22 @@ h2 {
   transition: background-color .6s;
 }
 
-.navbar__element {
+.navbar .navbar-brand {
+  font-family: 'main_bold';
+}
+
+.navbar a {
   text-transform: uppercase;
   color: #fff;
   -webkit-transition: color .4s;
   transition: color .4s;
 }
 
-.navbar__element--brand {
-  font-family: 'main_bold';
-}
-
-.navbar__element:hover {
+.navbar a:hover {
   color: #10deec;
 }
 
-.navbar__mobile {
+.navbar .fa-bars {
   color: #fff;
   padding: 10px;
 }
@@ -238,11 +238,11 @@ h2 {
 
 /*MAIN*/
 /*ABOUT ME*/
-.about-me__col {
+.about-me .col {
   padding: 10px;
 }
 
-.about-me__img {
+.about-me img {
   height: 340px;
 }
 
@@ -334,11 +334,11 @@ h2 {
 
 /*CERTIFICATES*/
 /*MAIN PAGE*/
-.cerftificates__link {
+.cerftificates a {
   color: black;
 }
 
-.cerftificates__icon {
+.cerftificates i {
   padding-top: 20px;
   font-size: 80px;
   cursor: pointer;
@@ -346,14 +346,14 @@ h2 {
   transition: all .4s;
 }
 
-.cerftificates__icon__text {
+.cerftificates i p {
   font-weight: normal;
   font-size: 13px;
   text-transform: uppercase;
   padding-top: 10px;
 }
 
-.cerftificates__icon:hover {
+.cerftificates i:hover {
   color: #10deec;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -392,11 +392,11 @@ h2 {
   background-image: url("../img/contact/contact ip5.jpeg");
 }
 
-.contact__h3 {
-  font-weight: bold;
+.contact h3 {
+  font-family: 'main_bold';
 }
 
-.contact__h2, .contact__item {
+.contact h2, .contact__item {
   color: #fff;
 }
 
@@ -404,26 +404,26 @@ h2 {
   padding: 10px;
 }
 
-.contact__item__icon {
-  font-size: 35px;
-}
-
-.contact__item__a {
+.contact__item a {
   color: #fff;
   -webkit-transition: color .4s;
   transition: color .4s;
 }
 
-.contact__item__a:hover {
+.contact__item a i {
+  font-size: 35px;
+}
+
+.contact__item a:hover {
   color: #10deec;
 }
 
-.contact__item__i {
+.contact__item .fas {
   padding: 7px;
 }
 
 /*FOOTER*/
-.footer__a {
+footer a {
   color: #fff;
   text-decoration: none;
   -webkit-transition: color .4s;
@@ -432,7 +432,7 @@ h2 {
   font-family: 'main_bold';
 }
 
-.footer__a:hover {
+footer a:hover {
   color: #10deec;
 }
 
@@ -449,7 +449,7 @@ h2 {
   .about-me__text {
     font-size: 13px;
   }
-  .about-me__img {
+  .about-me img {
     height: 430px;
   }
   /*REHABILITATION*/
@@ -471,7 +471,7 @@ h2 {
   .about-me__text {
     font-size: 16px;
   }
-  .about-me__img {
+  .about-me img {
     height: 490px;
   }
   /*CERTIFICATES*/
@@ -490,7 +490,7 @@ h2 {
     background-image: url("../../static/img/header/header big.jpeg");
   }
   /*ABOUT ME*/
-  .about-me__img {
+  .about-me img {
     height: 400px;
   }
 }
@@ -500,7 +500,7 @@ h2 {
   .about-me__text {
     font-size: 18px;
   }
-  .about-me__img {
+  .about-me img {
     height: 440px;
   }
 }

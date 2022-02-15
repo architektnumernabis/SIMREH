@@ -88,21 +88,21 @@ h2 {
     z-index: 1;
     transition: background-color .6s;
 
-    &__element {
+    .navbar-brand {
+        font-family: 'main_bold';
+    }
+
+    a {
         text-transform: uppercase;
         color: $white_color;
         transition: color .4s;
-
-        &--brand {
-            font-family: 'main_bold';
-        }
     }
 
-    &__element:hover {
+    a:hover {
         color: $main_color;
     }
 
-    &__mobile {
+    .fa-bars {
         color: $white_color;
         padding: 10px;
     }
@@ -138,11 +138,11 @@ h2 {
 /*MAIN*/
 /*ABOUT ME*/
 .about-me {
-    &__col {
+    .col {
         padding: 10px;
     }
 
-    &__img {
+    img {
         height: 340px;
     }
 }
@@ -232,17 +232,17 @@ h2 {
 /*CERTIFICATES*/
 /*MAIN PAGE*/
 .cerftificates {
-    &__link {
+    a {
         color: $black_color;
     }
 
-    &__icon {
+    i {
         padding-top: 20px;
         font-size: 80px;
         cursor: pointer;
         transition: all .4s;
 
-        &__text {
+        p {
             font-weight: normal;
             font-size: 13px;
             text-transform: uppercase;
@@ -250,10 +250,11 @@ h2 {
         }
     }
 
-    &__icon:hover {
+    i:hover {
         color: $main_color;
         transform: scale(1.1);
     }
+
 }
 
 /*SUBPAGES FOR CERTIFICATES*/
@@ -294,11 +295,11 @@ h2 {
         background-image: url('../img/contact/contact\ ip5.jpeg');
     }
 
-    &__h3 {
-        font-weight: bold;
+    h3 {
+        font-family: 'main_bold';
     }
 
-    &__h2,
+    h2,
     &__item {
         color: $white_color;
     }
@@ -306,28 +307,28 @@ h2 {
     &__item {
         padding: 10px;
 
-        &__icon {
-            font-size: 35px;
-        }
-
-        &__a {
+        a {
             color: $white_color;
             transition: color .4s;
+
+            i {
+                font-size: 35px;
+            }
         }
 
-        &__a:hover {
+        a:hover {
             color: $main_color;
         }
 
-        &__i {
+        .fas {
             padding: 7px;
         }
     }
 }
 
 /*FOOTER*/
-.footer {
-    &__a {
+footer {
+    a {
         color: $white_color;
         text-decoration: none;
         transition: color .4s;
@@ -335,7 +336,7 @@ h2 {
         font-family: 'main_bold';
     }
 
-    &__a:hover {
+    a:hover {
         color: $main_color;
     }
 }
@@ -359,7 +360,7 @@ h2 {
             font-size: 13px;
         }
 
-        &__img {
+        img {
             height: 430px;
         }
     }
@@ -394,7 +395,7 @@ h2 {
             font-size: 16px;
         }
 
-        &__img {
+        img {
             height: 490px;
         }
     }
@@ -425,7 +426,7 @@ h2 {
 
     /*ABOUT ME*/
     .about-me {
-        &__img {
+        img {
             height: 400px;
         }
     }
@@ -439,7 +440,7 @@ h2 {
             font-size: 18px;
         }
 
-        &__img {
+        img {
             height: 440px;
         }
     }
