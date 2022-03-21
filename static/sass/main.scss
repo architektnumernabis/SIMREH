@@ -194,7 +194,7 @@ h2 {
     color: $white_color;
 
     &__img {
-        height: 85vh;
+
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 01\ big.jpeg');
     }
 }
@@ -204,7 +204,6 @@ h2 {
     color: $white_color;
 
     &__img {
-        height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 02\ big.jpeg');
     }
 }
@@ -214,7 +213,6 @@ h2 {
     color: $white_color;
 
     &__img {
-        height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 03\ big.jpeg');
     }
 }
@@ -224,7 +222,6 @@ h2 {
     color: $white_color;
 
     &__img {
-        height: 85vh;
         background-image: url('../../static/img/rehabilitation/rehabilitation\ 04\ \ big.jpeg');
     }
 }
@@ -342,6 +339,37 @@ footer {
 }
 
 /*MEDIA QUERIES*/
+@media (min-width: 567px) {
+
+    /*ORTHOPEDIC REHABILITATION*/
+    .header-orthopedic {
+        &__img {
+            height: 85vh;
+        }
+    }
+
+    /*NEUROLOGIC REHABILITATION*/
+    .header-neurologic {
+        &__img {
+            height: 85vh;
+        }
+    }
+
+    /*CLASSICAL MASSAGE*/ 
+    .header-massage {
+        &__img {
+            height: 85vh;
+        }
+    }
+
+    /*BACK PAIN REHABILITATION*/ 
+    .header-back-pain {
+        &__img {
+            height: 85vh;
+        }
+    }
+}
+
 @media(min-width: 768px) {
     .hero-image {
         background-size: cover;
