@@ -433,25 +433,6 @@ footer a:hover {
 }
 
 /*MEDIA QUERIES*/
-@media (min-width: 567px) {
-  /*ORTHOPEDIC REHABILITATION*/
-  .header-orthopedic__img {
-    height: 85vh;
-  }
-  /*NEUROLOGIC REHABILITATION*/
-  .header-neurologic__img {
-    height: 85vh;
-  }
-  /*CLASSICAL MASSAGE*/
-  .header-massage__img {
-    height: 85vh;
-  }
-  /*BACK PAIN REHABILITATION*/
-  .header-back-pain__img {
-    height: 85vh;
-  }
-}
-
 @media (min-width: 768px) {
   .hero-image {
     background-size: cover;
@@ -470,6 +451,22 @@ footer a:hover {
   /*REHABILITATION*/
   .rehabilitation .card .card-body {
     height: 220px;
+  }
+  /*ORTHOPEDIC REHABILITATION*/
+  .header-orthopedic__img {
+    height: 85vh;
+  }
+  /*NEUROLOGIC REHABILITATION*/
+  .header-neurologic__img {
+    height: 85vh;
+  }
+  /*CLASSICAL MASSAGE*/
+  .header-massage__img {
+    height: 85vh;
+  }
+  /*BACK PAIN REHABILITATION*/
+  .header-back-pain__img {
+    height: 85vh;
   }
   /*CONTACT*/
   .contact__img {
