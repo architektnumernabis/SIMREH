@@ -10,6 +10,7 @@ I learned how to use Bootstrap compontents. My inspiration for layout comes from
 I had a lot of fun creating this site. :)
 
 --PL--
+###
 Projekt strony internetowej SIM-REH
 To jest mój pierwszy projekt strony internetowej.
 Głównym celem stworzenia tej strony było przetrenowanie umiejętności nabytych przeze mnie na kursach online.
