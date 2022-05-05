@@ -1,5 +1,6 @@
 # SIMREH
 SIM-REH website project
+
 --ENG--
 ###
 This is my very first website project. 
@@ -12,7 +13,7 @@ Creating this site has provided me with a lot of fun! :)
 #
 
 Projekt strony internetoweh Sim-reh
-##
+###
 --PL--
 ###
 To jest mój pierwszy projekt strony internetowej.
