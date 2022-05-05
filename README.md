@@ -1,7 +1,7 @@
 # SIMREH
-SIM-REH website project
-
 --ENG--
+
+SIM-REH website project
 ###
 This is my very first website project. 
 Main purpouse of creating this site was to practice abilites which I learned at online courses. 
@@ -12,9 +12,9 @@ I hosted this website by cyberfolks.pl (sim-reh.pl).
 Creating this site has provided me with a lot of fun! :) 
 #
 
-Projekt strony internetoweh Sim-reh
-###
 --PL--
+###
+Projekt strony internetoweh Sim-reh
 ###
 To jest mój pierwszy projekt strony internetowej.
 Głównym celem stworzenia tej strony było przetrenowanie umiejętności nabytych przeze mnie na kursach online.
